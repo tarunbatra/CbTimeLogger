@@ -11,6 +11,22 @@ trimNewLine() {
   echo "$result"
 }
 
+# Show help menu if asked by client
+if [[ $* == -h || $* == --help ]]; then
+  echo "
+  Usage:  bash logger.sh ([hours] [date] | [-h] [--help])
+
+          hours     - Number of hours you want to log. If not providing this argument, set 'DEFAULT_HOURS' in 'setup.conf
+          date      - Date in dd/mm/yyyy format to log time against. It defaults to today's date if not provided
+          -h --help - Displays this menu
+
+  Example:  bash logger.sh
+            bash logger.sh 8 01/01/1970
+            bash logger.sh -h
+  "
+  exit 1
+fi
+
 # Check if the user logged in
 if [ ! -f headers.txt ]; then
   echo "Please sign in first using:
