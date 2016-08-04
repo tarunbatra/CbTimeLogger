@@ -60,6 +60,8 @@ if [ -n "$2" ]; then
     DATE=$2
 fi
 
+echo "Logging time..."
+
 # Make the web call to log time
 curl -v \
 -H "Content-Type: application/json" \
@@ -71,7 +73,7 @@ $TIME_LOG_URL &> time.log
 
 # Inform user about the result of the operation
 if [ 0 -eq $? ]; then
-  echo "Time logged successfully"
+  echo "Time logged successfully."
 else
   echo "Time logging failed. See time.log for more details." # time.log pun intended :P
   echo `date` >> time.log
