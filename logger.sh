@@ -1,5 +1,10 @@
 #!/usr/bin env bash
 
+# CbTimeLogger  - logger
+# PURPOSE : A CLI for CodeBrahma employees to log time
+# AUTHOR  : tbking <tarun.batra00@gmail.com>
+# LICENSE : MIT
+
 # Read config file
 . setup.conf
 

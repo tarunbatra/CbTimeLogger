@@ -1,5 +1,10 @@
 #!/usr/bin env bash
 
+# CbTimeLogger  - signin
+# PURPOSE : A CLI for CodeBrahma employees to sign in before running 'logger.sh'
+# AUTHOR  : tbking <tarun.batra00@gmail.com>
+# LICENSE : MIT
+
 # Read config file
 . setup.conf
 
