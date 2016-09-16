@@ -4,7 +4,6 @@ A command line interface for CodeBrahma employees to log time
 ## Installation
 - Clone the project by running: `git clone https://github.com/tarunbatra/CbTimeLogger`
 - Create a config file, `setup.conf` as described [below](#configuration)
-- Do a one-time sign in by running: `bash signin.sh`
 
 ## Usage
 - `cd` to the project root
