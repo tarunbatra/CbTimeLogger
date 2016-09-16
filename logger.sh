@@ -32,6 +32,9 @@ if [[ $* == -h || $* == --help ]]; then
   exit 1
 fi
 
+# Sign user in
+bash signin.sh
+
 # Check if the user logged in
 if [ ! -f headers.txt ]; then
   echo "Please sign in first using:
