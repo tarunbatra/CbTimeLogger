@@ -76,7 +76,7 @@ $TIME_LOG_URL &> time.log
 
 # Inform user about the result of the operation
 if [ 0 -eq $? ]; then
-  echo "Time logged successfully."
+  echo "Time logged successfully: $HOURS"
 else
   echo "Time logging failed. See time.log for more details." # time.log pun intended :P
   echo `date` >> time.log
